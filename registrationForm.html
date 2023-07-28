@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="registrationForm.css">
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+    <div class="container">
+      <form id="enrollmentForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter Your Name"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter Your Email"
+        />
+
+        <label for="Website">Website</label>
+        <input
+          type="url"
+          id="Website"
+          name="Website"
+          required
+          placeholder="Enter Your Web Link"
+        />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br />
+
+        <input type="submit" value="Enroll Student" />
+        <input type="reset" value="Clear" />
+      </form>
+
+      <div id="enrollmentData">
+        <h2>Enrolled Students</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+          </tr>
+          <tbody id="enrolledStudents"></tbody>
+        </table>
+      </div>
+
+      <div id="totalEnrolled"></div>
+
+
+      <script src="registrationForm.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: transparent;
+  background-image: url(bgimg.jpg);
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: #2e2e2e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ffa601;
+  font-size: 40px;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+h2 {
+  margin: 10px 5px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 14px 0px;
+  color: #e7bcbc;
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+select {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+input[type="date"],
+textarea {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bolder;
+}
+input[type="reset"] {
+  background-color: #a82d2d;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+input[type="submit"]:hover {
+  background-color: #11e01b;
+}
+input[type="reset"]:hover {
+  background-color: #ff0000;
+}
+
+#enrollmentData {
+  background-color: #eaf2f8;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+#enrollmentData table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#enrollmentData th,
+#enrollmentData td {
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+#enrollmentData th {
+  background-color: #e79d9d;
+}
+
+#totalEnrolled {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+td,
+th {
+  font-size: 13px;
+  font-weight: bolder;
+  background-color: #c4e5e5;
+}
+#totalEnrolled {
+  color: #eaf2f8;
+}
